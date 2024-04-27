@@ -1,9 +1,7 @@
-public class Bicycle {
+public class Bicycle extends Vehicle implements tyreService {
 
-    public String modelName;
-    public int wheelsCount;
-
+    @Override
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем велосипедную покрышку");
     }
 }
